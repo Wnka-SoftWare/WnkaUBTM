@@ -1,10 +1,10 @@
 [package]
-name = "wnka_boot"
+name = "wnka_ubtm"
 version = "0.1.0"
 edition = "2021"
 
 [[bin]]
-name = "wnka_boot"
+name = "wnka_ubtm"
 path = "uefi/main.rs"
 
 [dependencies]
