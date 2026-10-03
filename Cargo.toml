@@ -1,0 +1,18 @@
+[package]
+name = "wnka_boot"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "wnka_boot"
+path = "uefi/main.rs"
+
+[dependencies]
+uefi = { version = "0.28", features = ["alloc"] }
+uefi-macros = "0.13"
+goblin = { version = "0.9", default-features = false, features = ["elf32", "elf64", "endian_fd", "alloc"] }
+
+[profile.release]
+panic = "abort"
+opt-level = "z"
+lto = true
