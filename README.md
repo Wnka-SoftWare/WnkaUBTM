@@ -465,32 +465,10 @@ The WnkaUBTM codebase is divided into several components:
 WnkaUBTM
 │
 ├── bootloader/
-│   ├── c/
-│   ├── config/
 │   └── uefi/
-│       ├── acpi.rs
-│       ├── boot.rs
-│       ├── elf_loader.rs
-│       ├── ffi.rs
-│       ├── fs.rs
-│       ├── main.rs
-│       ├── memory_map.rs
-│       ├── panic.rs
-│       ├── serial.rs
-│       └── video.rs
+│       └──  main.rs
 │
-├── include/
-│   ├── bootinfo.h
-│   ├── config.h
-│   ├── kernel.h
-│   ├── types.h
-│   └── version.hpp
 │
-├── docs/
-│   ├── arch.md
-│   ├── build.md
-│   ├── memory.md
-│   └── syscalls.md
 │
 └── README.md
 ```
